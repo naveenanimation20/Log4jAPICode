@@ -68,6 +68,7 @@ public class LoginTest {
 
 		boolean b = driver.findElement(By.xpath("//img[@class='img-responsive']")).isDisplayed();
 		Assert.assertTrue(b);
+			Assert.assertTrue(b);
 		
 		log.info("****************************** ending test case *****************************************");
 		log.info("****************************** freemCRMLogoTest *****************************************");
