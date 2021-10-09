@@ -44,6 +44,7 @@ public class LoginTest {
 		log.warn("Hey this just a warning message");
 		log.fatal("hey this is just fatal error message");
 		log.debug("this is debug message");
+		System.out.println("this is for the testing");
 	}
 	
 	
