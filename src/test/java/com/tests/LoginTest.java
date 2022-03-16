@@ -31,7 +31,7 @@ public class LoginTest {
 	public void setup(){
 		log.info("****************************** Starting test cases execution  *****************************************");
 
-		System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");	
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");	
 		driver = new ChromeDriver(); 
 		log.info("launching chrome broswer");
 		driver.manage().window().maximize();
@@ -44,6 +44,7 @@ public class LoginTest {
 		log.warn("Hey this just a warning message");
 		log.fatal("hey this is just fatal error message");
 		log.debug("this is debug message");
+		System.out.println("this is for the testing");
 	}
 	
 	
@@ -68,6 +69,9 @@ public class LoginTest {
 
 		boolean b = driver.findElement(By.xpath("//img[@class='img-responsive']")).isDisplayed();
 		Assert.assertTrue(b);
+ 						Assert.assertTrue(b);
+ 						 						Assert.assertTrue(b);
+
 		
 		log.info("****************************** ending test case *****************************************");
 		log.info("****************************** freemCRMLogoTest *****************************************");
